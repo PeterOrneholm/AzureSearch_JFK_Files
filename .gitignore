@@ -247,3 +247,5 @@ ModelManifest.xml
 
 # VSCode
 .vscode/*
+
+AppLocal.config
