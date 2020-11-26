@@ -1,3 +1,5 @@
+__NOTE: This is a fork of the JFK Files project by Microsoft, but retargeted for Palme__
+
 # The JFK Files
 Explore the JFK Assassination files using the AI Enrichment features of Azure Cognitive Search. You can watch the demo in action in a short [online video](https://channel9.msdn.com/Shows/AI-Show/Using-Cognitive-Search-to-Understand-the-JFK-Documents) or explore the JFK files yourself with our [online demo](https://aka.ms/jfkfiles-demo).
 
@@ -50,7 +52,7 @@ These instructions will help you have your own version of the JFK files demo run
     6. A Cognitive Services account, of type [CognitiveServices](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/), that will be used for billing your Cognitive Search skills usage.
 
     </br>
-    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FAzureSearch_JFK_Files%2Fmaster%2Fazuredeploy.json" target="_blank">
+    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPeterOrneholm%2FPalme_files%2Fmaster%2Fazuredeploy.json" target="_blank">
         <img src="http://azuredeploy.net/deploybutton.png"/>
     </a>
 
