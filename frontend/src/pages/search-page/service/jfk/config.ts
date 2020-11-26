@@ -5,7 +5,7 @@ import { mapStateToSearchPayload, mapSearchResponseToState } from "./mapper.sear
 
 export const jfkServiceConfig: ServiceConfig = {
   serviceId: "jfk-docs",
-  serviceName: "JFK Documents",
+  serviceName: "Palme Documents",
   serviceIcon: "fingerprint",
 
   searchConfig: {
@@ -58,7 +58,7 @@ export const jfkServiceConfig: ServiceConfig = {
     facetCollection: [
       {
         fieldId: "entities",
-        displayName: "Entities",
+        displayName: "Nyckelord",
         iconName: null,
         selectionControl: "checkboxList",
         values: null,

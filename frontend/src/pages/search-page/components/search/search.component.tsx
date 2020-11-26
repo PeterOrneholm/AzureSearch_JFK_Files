@@ -30,7 +30,7 @@ const SearchAutocompleteInput = ({searchValue, suggestionCollection, onSearchUpd
     type="search"
     name="searchBox"
     id="searchBox"
-    placeholder="Search ..."
+    placeholder="Sök ..."
     searchValue={searchValue}
     suggestionCollection={suggestionCollection}
     onSearchUpdate={onSearchUpdate}
@@ -46,7 +46,7 @@ const SearchButton = ({ onClick }) => (
     color="secondary"
     onClick={onClick}
   >
-    SEARCH
+    SÖK
   </Button>
 );
 
@@ -54,7 +54,7 @@ const ResultCounter = ({ count }) => (
   <Typography variant="subheading"
     color={count ? "primary" : "secondary"}
   >
-    {`${count} results found`}
+    {`${count} dokument hittades`}
   </Typography>
 );
 

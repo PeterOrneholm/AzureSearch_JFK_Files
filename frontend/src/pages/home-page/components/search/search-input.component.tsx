@@ -25,7 +25,7 @@ export const SearchInput = (props: SearchInputProps) => (
     <input
       className={style.input}
       type="text"
-      placeholder="Search here..."
+      placeholder="Sök här..."
       value={props.searchValue}
       onChange={handleOnChange(props.onSearchUpdate)}
       onKeyPress={captureEnter(props.onSearchSubmit)}

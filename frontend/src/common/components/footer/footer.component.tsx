@@ -5,25 +5,22 @@ import { cnc } from "../../../util";
 const style = require("./footer.style.scss");
 
 const Links = () => (
-  <div className={style.linkArea}>
-    <a className={style.link} href="https://technet.microsoft.com/en-US/cc300389.aspx" target="__blank">Terms of Use</a>
-    <a className={style.link} href="https://go.microsoft.com/fwlink/?LinkId=248681" target="__blank">Privacy</a>    
-  </div>
+    <div className={style.linkArea}>
+      Bakgrundsbild ifrån <a className={style.link} href="https://commons.wikimedia.org/wiki/File:Sveav%C3%A4gen_44,_Stockholm.jpg" target="__blank">Wikipedia</a>.
+      Baserat på <a className={style.link} href="https://www.microsoft.com/en-us/ai/ai-lab-jfk-files" target="__blank">JFK Files av Microsoft</a>.
+      Modifierat för <a className={style.link} href="http://palmemordsarkivet.se/" target="__blank">palmemordsarkivet.se</a> av <a className={style.link} href="https://www.activesolution.se/" target="__blank">Active Solution</a>.
+    </div>
 );
 
 const Statement = () => (
   <div className={style.statementArea}>
-    © Microsoft 2018
+    
   </div>
 );
 
 export const FooterComponent = ({className = null}) => {
   return (
     <footer className={cnc(style.footer, className)}>
-      <Statement />
-      <a href="https:\\www.microsoft.com" target="__blank">
-        <LogoMicrosoftComponent colorful={false} classes={{container: style.logoContainer, svg: style.logoSvg }} />
-      </a> 
       <Links />
     </footer>
   );

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Configuration;
 using Microsoft.Azure.Search.Models;
 
@@ -173,7 +174,8 @@ namespace JfkInitializer
                         Outputs = new List<OutputFieldMappingEntry>()
                         {
                             new OutputFieldMappingEntry(name: "imageStoreUri")
-                        }
+                        },
+                        Timeout = TimeSpan.FromSeconds(229)
                     },
                     new WebApiSkill()
                     {
@@ -189,7 +191,8 @@ namespace JfkInitializer
                         Outputs = new List<OutputFieldMappingEntry>()
                         {
                             new OutputFieldMappingEntry(name: "hocrDocument")
-                        }
+                        },
+                        Timeout = TimeSpan.FromSeconds(229)
                     },
                     new WebApiSkill()
                     {
@@ -204,7 +207,8 @@ namespace JfkInitializer
                         Outputs = new List<OutputFieldMappingEntry>()
                         {
                             new OutputFieldMappingEntry(name: "cryptonyms")
-                        }
+                        },
+                        Timeout = TimeSpan.FromSeconds(229)
                     }
                 },
                 CognitiveServices = new CognitiveServicesByKey(key: ConfigurationManager.AppSettings["CognitiveServicesAccountKey"])

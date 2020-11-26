@@ -18,7 +18,7 @@ interface HomePageProps {
 export const HomePageComponent: React.StatelessComponent<HomePageProps> = (props) => {
   return (
     <div className={style.container}>
-      <LogoJFKComponent classes={{container: style.logoContainer, svg: style.logoSvg}} />
+      
       <div className={style.main}>
         <CaptionComponent />
         <SearchInput         

@@ -10,6 +10,6 @@ export const SearchButton = ({ onClick }) => (
     color="secondary"
     onClick={onClick}
   >
-    SEARCH
+    SÖK
   </Button>
 );

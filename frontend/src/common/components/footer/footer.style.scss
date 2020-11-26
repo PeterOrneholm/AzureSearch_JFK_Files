@@ -3,11 +3,7 @@
 
 @mixin footer-text {
   color: $colorWhite;
-  font-size: 0.65rem;
 
-  @include respond-to-desktop {
-    font-size: 0.8rem;
-  }
 }
 
 .footer {
@@ -48,13 +44,13 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    opacity: 0.5;
-    width: 10rem;
+    opacity: 0.7;
 
     .link {
       @include footer-text;
 
-      margin-left: 1rem;
+      margin-left: 4px;
+      margin-right: 4px;
     }
   }
 

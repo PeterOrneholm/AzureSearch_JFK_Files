@@ -29,7 +29,7 @@ export const PageBarComponent = (props) => {
           onClick={props.onMenuClick}
         />
         <LogoJFKComponent classes={{container: style.logoContainer, svg: style.logoSvg}}/>
-        <ResultViewModeToggler {...props} />
+
       </Toolbar>
     </AppBar>
   )

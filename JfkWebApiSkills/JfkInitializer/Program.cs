@@ -31,6 +31,7 @@ namespace JfkInitializer
 
         // Set this to true if you would like this app to deploy the JFK files frontend to your Azure site.
         private static bool ShouldDeployWebsite = true;
+        private static bool ShouldOnlyDeployWebsite = true;
 
         // Clients
         private static ISearchServiceClient _searchClient;
@@ -69,31 +70,37 @@ namespace JfkInitializer
 
         private static async Task<bool> RunAsync()
         {
-            bool result = await DeleteIndexingResources();
-            if (!result)
-                return result;
-            result = await CreateBlobContainerForImageStore();
-            if (!result)
-                return result;
-            result = await CreateDataSource();
-            if (!result)
-                return result;
-            result = await CreateSkillSet();
-            if (!result)
-                return result;
-            result = await CreateSynonyms();
-            if (!result)
-                return result;
-            result = await CreateIndex();
-            if (!result)
-                return result;
-            result = await CreateIndexer();
-            if (!result)
-                return result;
+            bool result;
+            if (!ShouldOnlyDeployWebsite)
+            {
+                result = await DeleteIndexingResources();
+                if (!result)
+                    return result;
+                result = await CreateBlobContainerForImageStore();
+                if (!result)
+                    return result;
+                result = await CreateDataSource();
+                if (!result)
+                    return result;
+                result = await CreateSkillSet();
+                if (!result)
+                    return result;
+                result = await CreateSynonyms();
+                if (!result)
+                    return result;
+                result = await CreateIndex();
+                if (!result)
+                    return result;
+                result = await CreateIndexer();
+                if (!result)
+                    return result;
+            }
+
             if (ShouldDeployWebsite)
             {
                 result = await DeployWebsite();
             }
+
             result = await CheckIndexerStatus();
             if (!result)
                 return result;
