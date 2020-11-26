@@ -1,5 +1,9 @@
 __NOTE: This is a fork of the JFK Files project by Microsoft, but retargeted for Palme__
 
+Swedish images from:
+
+* https://commons.wikimedia.org/wiki/File:Sveav%C3%A4gen_44,_Stockholm.jpg
+
 # The JFK Files
 Explore the JFK Assassination files using the AI Enrichment features of Azure Cognitive Search. You can watch the demo in action in a short [online video](https://channel9.msdn.com/Shows/AI-Show/Using-Cognitive-Search-to-Understand-the-JFK-Documents) or explore the JFK files yourself with our [online demo](https://aka.ms/jfkfiles-demo).
 
